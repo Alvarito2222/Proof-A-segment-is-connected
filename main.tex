@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb} 
+\usepackage{parskip} 
+
+\title{Proof : The intersection of two open sets is open}
+\author{aleonp000 }
+\date{January 2023}
+
+\begin{document}
+
+
+\noindent
+\textbf{Theorem}:  A segment is Connected.
+
+\textit{Proof}: 
+Suppose $(a,b)$ is not connected. Then $(a,b)$ = $H\cup K$ where $H$ and $K$ are non-empty disjoint mutually separated sets .
+ 
+
+Consider $(a,z)$ , where $z$ is a variable. Consider $U =$ \textbraceleft$ z$ in $ (a,b) : (a,z) $ subset $H$\textbraceright . Let $W$ = l.u.b of $U$. We know that $W \leq b$ . 
+
+
+$\hookrightarrow$ Case 1: $W = b$. 
+If this happens $K$ will be empty. This contradicts that $K$ is non-empty.
+
+$\hookrightarrow$ Case 2: $W < b$.
+
+\textcircled{1} Claim:  $W$ is a limit point of $H$. Assume it's not. Then $\exists$ $\epsilon > 0$ s.t. $(W-\epsilon , W+ \epsilon )\cap H = \emptyset$ . Then $\exists$ smaller numbers than $W$ that are also upper bounds of $U$.
+
+\textcircled{2} Claim: $W$ is a limit point of $K$. Assume it's not. Then $\exists$ $\epsilon > 0$ s.t. $(W-\epsilon , W+ \epsilon )\cap K = \emptyset$ . Since everything between $(W , W+\epsilon)$ is in $H($Part of $U)$ , $W$ itself would not be a l.u.b. or even upper bound. This is a contradiction.
+
+WLOG , assume $W$ is in $H$,
+
+Since $K$ is mutually separated from $H$ and $W$ is a limit point of $K$ and $H$ , this contradicts our first assumption that $(a,b)$ = $H\cup K$.
+
+
+
+
+
+ \noindent 
+ $\therefore$ A segment is Connected      \spaceskip1cm   \hfill                     $\square$
+ 
+
+\end{document}
